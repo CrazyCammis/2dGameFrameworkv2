@@ -10,4 +10,20 @@ public abstract class Item {
         this.y = y;
         this.imageFile = imageFile;
     }
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public String getImageFile() {
+        return imageFile;
+    }
+
+    public void setImageFile(String imageFile) {
+        this.imageFile = imageFile;
+    }
 }
