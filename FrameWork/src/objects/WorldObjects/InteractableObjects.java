@@ -1,4 +1,4 @@
-package objects.Objects;
+package objects.WorldObjects;
 
 import sceneRender.Scene;
 
