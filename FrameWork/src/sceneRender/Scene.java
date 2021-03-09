@@ -1,3 +1,5 @@
+package sceneRender;
+
 import objects.characters.PlayableCharacter;
 import sceneRender.Background;
 
