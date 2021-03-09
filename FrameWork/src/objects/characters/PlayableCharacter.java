@@ -1,4 +1,4 @@
 package objects.characters;
 
-public class PlayableCharacter {
+public class PlayableCharacter extends Characters{
 }
