@@ -14,8 +14,8 @@ public class InteractableItem extends Item {
 
 
     //-------------------------------------------------------------------------------------//
-    public InteractableItem(int x, int y, String imageFile, String name) {
-        super(x, y, imageFile);
+    public InteractableItem(int posX, int posY, String imageFile, String name) {
+        super(posX, posY, imageFile);
         this.name = name;
     }
 }

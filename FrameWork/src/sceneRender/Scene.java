@@ -1,8 +1,8 @@
 package sceneRender;
 
+import objects.Objects.InteractableObjects;
 import objects.characters.PlayableCharacter;
 import objects.items.Item;
-import sceneRender.Background;
 
 import java.lang.reflect.Array;
 import java.util.List;
@@ -15,6 +15,16 @@ public class Scene {
     private final PlayableCharacter player;
     private final List<Item> items;
     private int movementSpeed;
+    private  String name;
+    public InteractableObjects getGoal() {
+        return goal;
+    }
+
+    public void setGoal(InteractableObjects goal) {
+        this.goal = goal;
+    }
+
+    public InteractableObjects goal;
 
 
     public Background getSceneBackground() {
@@ -42,16 +52,17 @@ public class Scene {
     }
 
 
-    public Scene(Background sceneBackground, Array enemies, PlayableCharacter player, List<Item> items, int movementSpeed) {
+    public Scene(Background sceneBackground, Array enemies, PlayableCharacter player, List<Item> items, String name, InteractableObjects goal) {
 
         this.sceneBackground = sceneBackground;
         this.enemies = enemies;
         this.player = player;
         this.items = items;
-        this.movementSpeed = movementSpeed;
+        this.name = name;
+        this.goal = goal;
     }
 
-
+//SPEED MOVMENT IDEA
     //moves it to the left or right with a speed of 2
     private void move(String key) {
 

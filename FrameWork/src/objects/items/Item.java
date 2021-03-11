@@ -2,21 +2,23 @@ package objects.items;
 
 public abstract class Item {
 
-    private final int x, y;
+    private final int posX, posY;
     private String imageFile;
 
-    public Item(int x, int y, String imageFile){
-        this.x = x;
-        this.y = y;
+    public Item(int posX, int posY, String imageFile){
+        this.posX = posX;
+        this.posY = posY;
         this.imageFile = imageFile;
     }
 
-    public int getX() {
-        return x;
+
+
+    public int getPosX() {
+        return posX;
     }
 
-    public int getY() {
-        return y;
+    public int getPosY() {
+        return posY;
     }
 
     public String getImageFile() {
