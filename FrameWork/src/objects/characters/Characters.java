@@ -3,19 +3,35 @@ package objects.characters;
 import objects.items.Equippable;
 
 public abstract class Characters {
-    int hp, width, height;
+    int hp;
+    int width;
+    int height;
+
+
+    int posX;
+    int posY;
     String name, modelPath;
     //int dmg;
     Equippable weapon;
 
-    public Characters(int hp, int width, int height, String name, String modelPath, Equippable weapon) {
+    public Characters(int hp, int width, int height, String name, String modelPath, Equippable weapon, int posX, int posY) {
         this.hp = hp;
         this.width = width;
         this.height = height;
         this.name = name;
         this.modelPath = modelPath;
         this.weapon = weapon;
+        this.posX = posX;
+        this.posY = posY;
     }
+
+    public int getPosX() { return posX;}
+
+    public void setPosX(int posX) { this.posX = posX; }
+
+    public int getPosY() { return posY; }
+
+    public void setPosY(int posY) { this.posY = posY; }
 
     public int getHp() {
         return hp;
